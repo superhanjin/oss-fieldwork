@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: fieldwork
-          image: username/fieldwork:latest
+          image: 676906203200.dkr.ecr.ap-northeast-2.amazonaws.com/oss-fieldwork:v1
           ports:
             - containerPort: 8080
           readinessProbe:
