@@ -4,6 +4,7 @@ metadata:
   name: fieldwork
   labels:
     app: fieldwork
+  namespace: oss
 spec:
   ports:
     - port: 8080
