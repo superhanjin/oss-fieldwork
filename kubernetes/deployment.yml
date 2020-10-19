@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fieldwork
+  name: oss-fieldwork
   labels:
-    app: fieldwork
+    app: oss-fieldwork
   namespace: oss
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fieldwork
+      app: oss-fieldwork
   template:
     metadata:
       labels:
-        app: fieldwork
+        app: oss-fieldwork
     spec:
       containers:
-        - name: fieldwork
+        - name: oss-fieldwork
           image: 496278789073.dkr.ecr.ap-northeast-2.amazonaws.com/oss-fieldwork:v1
           ports:
             - containerPort: 8080
